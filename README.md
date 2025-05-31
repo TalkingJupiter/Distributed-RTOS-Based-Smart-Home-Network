@@ -38,6 +38,7 @@ This project implements a distributed smart home automation system using multipl
 - Expandable to more nodes (e.g, HVAC, Doors, Power Meters)
 
 ## MQTT Topics
+```
 +----------------------------------------------------------+
 | Topic                     || Description                 |
 |---------------------------||-----------------------------|
@@ -46,6 +47,7 @@ This project implements a distributed smart home automation system using multipl
 |`home/bedroom/light/set`   || Commands for Node B relay   |
 |`home/status/deviceA`      || Heartbeat / status update   |
 +----------------------------------------------------------+
+```
 
 ## Future Work
 - Add TLS security for MQTT
