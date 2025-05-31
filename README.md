@@ -30,3 +30,25 @@ This project implements a distributed smart home automation system using multipl
                 | Control GUI |
                 *-------------*  
 ```
+## Features
+- Modular design with reusable components
+- Real time temperature and motion data publishing
+- Relay control via MQTT commands
+- Device discovery and heartbeat/status topics
+- Expandable to more nodes (e.g, HVAC, Doors, Power Meters)
+
+## MQTT Topics
++----------------------------------------------------------+
+| Topic                     || Description                 |
+|---------------------------||-----------------------------|
+|`home/livingroom/temp`     || Temperature data from Node A|
+|`home/livingroom/motion`   || PIR motion detected flag    |
+|`home/bedroom/light/set`   || Commands for Node B relay   |
+|`home/status/deviceA`      || Heartbeat / status update   |
++----------------------------------------------------------+
+
+## Future Work
+- Add TLS security for MQTT
+- Add OTA firmware update system
+- Add home GUI control panel (Maybe Fluter or React)
+
